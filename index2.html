@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Wireframe</title>
+    <link rel="stylesheet" href="/css/style2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">NZXT</a></div>
+        <nav class="nav">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h1>Contact</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod, ipsum a accumsan convallis, nisl arcu vulputate odio, ut venenatis felis turpis at purus.</p>
+    </section>
+
+    <!-- Form Section -->
+    <section class="form-section">
+        <h2>Form</h2>
+        <form action="#" method="POST">
+            <div class="formulier">
+                <label for="first-name">Voornaam</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Voornaam" required>
+            </div>
+            <div class="formulier">
+                <label for="last-name">Achternaam</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Achternaam" required>
+            </div>
+            <div class="formulier">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="formulier">
+                <label for="city">Woonplaats</label>
+                <input type="text" id="city" name="city" placeholder="Woonplaats" required>
+            </div>
+            <div class="formulier">
+                <label for="dob">Geboortedatum</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="formulier">
+                <label for="subject">Onderwerp</label>
+                <select id="subject" name="subject" required>
+                    <option value="" disabled selected>Kies onderwerp van het bericht...</option>
+                    <option value="option1">Optie 1</option>
+                    <option value="option2">Optie 2</option>
+                    <option value="option3">Optie 3</option>
+                </select>
+            </div>
+            <div class="formulier">
+                <label for="message">Bericht</label>
+                <textarea id="message" name="message" placeholder="Schrijf hier uw bericht..." required></textarea>
+            </div>
+            <div class="formulier">
+                <label>Inschrijven voor nieuwsbrief?</label>
+                <div>
+                    <input type="radio" id="newsletter-yes" name="newsletter" value="yes">
+                    <label for="newsletter-yes">Ja</label>
+                    <input type="radio" id="newsletter-no" name="newsletter" value="no" checked>
+                    <label for="newsletter-no">Nee</label>
+                </div>
+            </div>
+            <div class="formulier">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">Ik ga akkoord met de algemene voorwaarden</label>
+            </div>
+            <div class="formulier">
+                <button type="submit">Verzenden</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-logo">NZXT</div>
+        <div class="footer-links">
+            <a href="#">Privacyverklaring</a>
+            <a href="#">Algemene voorwaarden</a>
+            <a href="#">Cookiebeleid</a>
+            <a href="#">Contact</a>
+        </div>
+    </footer>
+
+</body>
+</html>

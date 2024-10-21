@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #292f37;
+    color: white;
+    padding: 1vw 2vw;
+}
+
+main {
+    margin: 0;
+}
+.logo{
+    width: 5%;
+    
+}
+
+.logo a {
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    text-decoration: none;
+
+}
+
+.nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    opacity: 0.5;
+    padding: 1vw;
+}
+
+.secone {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #313d49;
+    
+}
+
+.secone h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.secone p {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.buttons {
+    display: inline-block;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn-dark {
+    background-color: 
+    #c111c5;
+    color: white;
+}
+
+
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.Product-preview {
+    
+    background-color: white;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+}
+
+.product {
+    background-color: #e9edf3;
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.ex-img {
+    width: 100%;
+    height: auto;
+    background-color: #ccc;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100%;
+    
+}
+
+.product {
+    text-align: center;
+}
+
+.stars {
+    margin-bottom: 10px;
+    color: #f4c542;
+}
+h2{
+    color: black;
+}
+
+.footer {
+    background-color: #292f37;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.footer-logo {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.fologo{
+    width: 4%;
+    
+}
+
+.footer-links a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    opacity: 0.5;
+}
+
+/* Responsive Design for Mobile */
+@media only screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav a {
+        margin: 10px 0;
+    }
+
+    .secone {
+        padding: 40px 10px;
+    }
+
+    .secone h1 {
+        font-size: 1.5rem;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .buttons {
+        display: block;
+    }
+
+    .btn {
+        display: block;
+        margin: 10px auto;
+        width: 90%;
+        text-align: center;
+    }
+
+    .footer {
+        text-align: center;
+    }
+}
