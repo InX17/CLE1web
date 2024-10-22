@@ -1,3 +1,12 @@
+:root{
+    --purple: #781182;
+    --light-pink: #C97B84;
+     --green: #65C324 ;
+     --ornaje: #F56611;
+    --lamp-zwart: #151515; 
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,13 +20,17 @@ body {
     
 }
 
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #292f37;
+    background-color: var(--lamp-zwart);
     color: white;
     padding: 1vw 2vw;
+}
+p{
+margin: 5px;
 }
 
 main {
@@ -46,24 +59,38 @@ main {
 .nav a:hover {
     opacity: 0.5;
     padding: 1vw;
+    text-decoration: none;
 }
 
 .secone {
     text-align: center;
-    padding: 60px 20px;
+    padding: 20px;
+    padding-bottom: 180px;
     background-color: #313d49;
+    background-image: url(../images/smh.2.jpg);
+
+    
     
 }
 
-.secone h1 {
+.secone h1 {    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 2rem;
     margin-bottom: 20px;
     color: white;
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--lamp-zwart);
 }
 
 .secone p {
     margin-bottom: 20px;
     color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--lamp-zwart);
+
 }
 
 .buttons {
@@ -74,46 +101,56 @@ main {
     padding: 10px 20px;
     margin-right: 10px;
     text-decoration: none;
-    border: 2px solid white;
+    border: 2px solid var(--green);
     border-radius: 5px;
     display: inline-block;
 }
 
 .btn-dark {
-    background-color: 
-    #c111c5;
+    background-color: var(--lamp-zwart);
     color: white;
+    margin: 5px;
 }
 
 
 
 .btn:hover {
-    opacity: 0.8;
+    background-color: var(--green);
 }
 
 .Product-preview {
-    
-    background-color: white;
+    color: white;
+    background-color: var(--purple);
 }
 
 .products {
     display: flex;
     justify-content: center;
+    
 }
 
 .product {
-    background-color: #e9edf3;
+    background-color: var(--green);
     padding: 20px;
     width: 30%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.5s;
 }
 
+.product:hover{
+    transform: scale(1.1);
+
+}
+
+.Product-description{
+    padding: 1vw;
+    background-color: var(--purple);
+}
 .ex-img {
     width: 100%;
     height: auto;
-    background-color: #ccc;
     margin-bottom: 20px;
 }
 
@@ -124,30 +161,33 @@ img {
 
 .product {
     text-align: center;
+    margin-bottom: 2vw;
 }
 
-.stars {
-    margin-bottom: 10px;
-    color: #f4c542;
-}
+
 h2{
-    color: black;
+    color: white;
+    padding: 2vw;
 }
 
 .footer {
-    background-color: #292f37;
+    background-color: var(--lamp-zwart);
     color: black;
-    padding: 20px;
+    padding: 3vw;
     text-align: center;
     margin: 0;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
 }
 
-.footer-logo {
-    margin-bottom: 10px;
-    font-weight: bold;
-}
+
 .fologo{
-    width: 4%;
+    width: 5%;
+    margin-bottom: 10px;
+    font-weight: bold;   
+    flex : 1;
+   
     
 }
 
