@@ -83,6 +83,7 @@ main {
     -webkit-text-stroke-color: var(--lamp-zwart);
 }
 
+
 .secone p {
     margin-bottom: 20px;
     color: white;
@@ -90,6 +91,16 @@ main {
     font-size: 1.2rem;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--lamp-zwart);
+    
+
+}
+
+.invent{
+    background-color: var(--pink);
+    color: antiquewhite;
+    text-align: center;
+    padding: 1px;
+    
 
 }
 
@@ -121,26 +132,38 @@ main {
 .Product-preview {
     color: white;
     background-color: var(--purple);
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
 }
 
-.products {
+.items {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     
+}
+
+.description{
+    padding: 1vw;
+    margin: 1vw;
+    width: 25%;
+    font-size: larger;
+
 }
 
 .product {
     background-color: var(--green);
-    padding: 20px;
+    padding: 10px;
     width: 30%;
-    border-radius: 10px;
+    border-radius: 3%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.5s;
+    
 }
 
 .product:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 
 }
 
@@ -151,7 +174,7 @@ main {
 .ex-img {
     width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 1%;
 }
 
 img {
@@ -168,12 +191,23 @@ img {
 h2{
     color: white;
     padding: 2vw;
+   
+}
+h3{
+    margin: 2vw;
+    padding-bottom: 1vw;
+}
+
+
+.textdescrpipt{
+    padding: 1vw;
+    margin: 2vw;
 }
 
 .footer {
     background-color: var(--lamp-zwart);
     color: black;
-    padding: 3vw;
+    padding: 2vw;
     text-align: center;
     margin: 0;
     display: flex;
@@ -183,10 +217,10 @@ h2{
 
 
 .fologo{
-    width: 5%;
+    width: 4vw;
     margin-bottom: 10px;
     font-weight: bold;   
-    flex : 1;
+    flex: 1;
    
     
 }
